@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/assetts/style.css"/>
+    <title>CONTACT</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="/"> <img src='public/assetts/DWlogo.png'></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active ms-5" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active ms-5" aria-current="page" href="/addMyProject">Add Project</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="btn bg-contactme text-white me-auto" href="/contact">Contact Me</a>
+      </nav>  
+      <h2 class="mt-5 mb-5 d-flex justify-content-center"> GET IN TOUCH </h2>
+      <div class="container-contact-form d-flex flex-column justify-content-center align-items-center">
+      <form action="" class="m-0 ">
+        <div class="mb-3">
+          <label for="form-name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="form-name">
+        </div>
+        <div class="mb-3">
+          <label for="form-email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="form-email">
+        </div>
+        <div class="mb-3">
+        <label for="form-phone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="form-phone" pattern="[0-9]">
+        </div>
+        <div class="mb-3">
+      <label for="form-subject">Subject</label>
+      <select class="form-select" id="form-subject">
+        <option selected=""></option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      </div>
+      <div class="mb-3">
+        <label for="formTextArea" class="form-label">Your Message</label>
+        <textarea class="form-control" id="formTextArea" rows="5"></textarea>
+      </div>
+       <div class="text-end mt-5">
+        <button class="btn bg-contactme text-white px-4">submit</button>
+      </div>
+    </form>
+      </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</html>

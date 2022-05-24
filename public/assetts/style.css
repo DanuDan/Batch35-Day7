@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+body{
+    background-color: rgb(190, 190, 190);
+}
+.bg-contactme{
+    background-color:rgb(5, 5, 5);
+}
+
+.txt-color{
+    color: rgb(245, 95, 41) !important;
+}
+.navbar {
+    align-items:flex-start !important;
+    width:100%
+}
+
+.container-contact-form{
+    width:100%
+}
+
+.container-contact-form form{
+    height: auto;
+    width: 70vh;
+}
+
+.mb-3 label {
+    margin-bottom:0% ;
+    font-size:larger
+}
+
+textarea {
+    resize: none;
+}
+
+.download {
+    text-decoration: none;
+    color: black;
+}
+
+.icon-socmed img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.checkbox-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.checkbox-first-form,
+.checkbox-second-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 38%;
+}
+
+.checkbox {
+    width: auto
+}
+
+.card .me-5{
+    border: none !important;
+}
+
+.img-icon img{
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.card-title {
+    text-decoration: none;
+    color: black;
+}
+
+.bg-beige {
+    background-color:rgb(223, 221, 219);
+}
+
+.bg-card{
+    background-color: rgb(190, 190, 190);
+}
