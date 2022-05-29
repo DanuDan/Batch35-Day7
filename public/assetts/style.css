@@ -6,6 +6,11 @@
 body{
     background-color: rgb(190, 190, 190);
 }
+
+.bg-body{ 
+    background-color:aqua
+}
+
 .bg-contactme{
     background-color:rgb(5, 5, 5);
 }

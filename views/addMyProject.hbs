@@ -3,7 +3,7 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="public/assetts/style.css"/>
-    <title>Danunian</title>
+    <title>Add Project</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -26,21 +26,22 @@
         <a class="btn bg-contactme text-white me-auto" href="/contact">Contact Me</a>
     </nav>
 
-    <h2 class="mt-5 mb-5 d-flex justify-content-center"> Add My Project</h2>
+
+    <h2 class="mt-5 mb-5 d-flex justify-content-center"> Add My Project </h2>
     <div class="container-contact-form d-flex flex-column justify-content-center align-items-center">
         <form class="form-container" action="/addMyProject" method="POST" class="m-0 ">
           <div class="mb-3">
             <label for="form-project-name" class="form-label">Project Name</label>
-            <input type="text" name="Project Name" class="form-control" id="form-project-name">
+            <input type="text" name="ProjectName" class="form-control" id="form-project-name">
           </div>
           <div class="row row-cols-2 ms-0 g-0 gx-0">
             <div class="row g-0 mb-3 col-6"> 
             <label for="form-start-date" class="form-label">Start Date</label>
-            <input type="date" name="Start Date" class="form-control" id="form-start-date">
+            <input type="date" name="StartDate" class="form-control" id="form-start-date">
           </div>
           <div class="row g-0 mb-3 col-6">
           <label for="form-end-date" class="form-label">End Date</label>
-          <input type="date" name="End Date"class="form-control" id="form-end-date" pattern="[0-9]">
+          <input type="date" name="EndDate"class="form-control" id="form-end-date" pattern="[0-9]">
           </div>
           </div>
          <div class="mb-3">
@@ -53,24 +54,24 @@
             <div class="checkbox-form">
               <div class="checkbox-first-form">
                   <label class="container">
-                  <input type="checkbox" value="0" name="NodeJS" class="checkbox">
+                  <input type="checkbox" value="/public/assetts/icon/node-js.png" name="NodeJS" class="checkbox">
                   <span class="checkmark"></span>
                    NodeJS
                   </label>
                   <label class="container">
-                  <input type="checkbox" value="1" name="ReactJS"class="checkbox">
+                  <input type="checkbox" value="/public/assetts/icon/react-js.png" name="ReactJS"class="checkbox">
                   <span class="checkmark"></span>
                    ReactJS
                   </label>
                 </div>
               <div class="checkbox-second-form">
                    <label class="container">
-                  <input type="checkbox" value="3" name="NextJS" class="checkbox">
+                  <input type="checkbox" value="/public/assetts/icon/next-js.png" name="NextJS" class="checkbox">
                    <span class="checkmark"></span>
                    NextJS
                   </label>
                   <label class="container">
-                    <input type="checkbox" value="2" name="TypeScript"class="checkbox">
+                    <input type="checkbox" value="/public/assetts/icon/typescript.png" name="TypeScript"class="checkbox">
                     <span class="checkmark"></span>
                      TypeScript
                   </label>
@@ -83,7 +84,7 @@
             <div class="icon-input"style="width:100%">
             <img src='public/assetts/file.png' class="p-2"
                 style="margin-left:64vh; position: absolute;">
-            <input class="form-control" type="file" name="Upload Image" id="formUploadImage">
+            <input class="form-control" type="file" name="UploadImage" id="formUploadImage">
         </div></div>
   
 
@@ -92,7 +93,6 @@
         </div>
       </form>
         </div>
-
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

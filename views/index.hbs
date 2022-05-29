@@ -24,6 +24,7 @@
         </div>
         <a class="btn bg-contactme text-white me-auto" href="/contact">Contact Me</a>
     </nav>
+    <div cass="container bg-body mb-5 mt-5">
     <div class="card-containter mb-5">
     <div class="card-containter d-flex justify-content-center mt-5" style="width: 100%">
         <div class="card p-4" style="width: 150vh;">
@@ -58,35 +59,38 @@
         </div>
     </div>
     </div>
+    </div>
 
-    <h2 class="pt-5 pb-5 d-flex justify-content-center align-items-center bg-beige" style="width: 100%;"> MY PROJECT</h2> 
-    <div class ="container-content" style="width:100%;">   
-    <div class="row row-cols-1 row-cols-md-4 g-5 me-0 d-flex justify-content-center align-items-center bg-beige">
-    <div class="col p-0" style="width:45vh">
-          <div class="card h-100">
+    <h2 class="pt-5 pb-5 mb-0 d-flex justify-content-center align-items-center bg-beige" style="width: 100%;"> MY PROJECT</h2> 
+
+    <div class ="container-content row row-cols-4 g-0 d-flex justify-content-center bg-beige" style="width:100%;">   
+    {{#each projects}}
+    <div class=" me-0 d-flex bg-beige">
+    <div class="col p-0" style="width:40vh">
+          <div class="card h-100 me-5">
             <img src='public/assetts/JasonMomoa.jpg' class="card-img-top p-2 pb-0"  alt=""/>
             <div class="card-body pt-0">
-            <a class= "card-title" href="/myProject-Detail">
-              <h5 class="card-title-font mt-0 mb-0 fw-semibold">Card Title</h5></a>
+            <a class= "card-title" href="/myProject-Detail/{{@index}}" target="_blank">
+              <h5 class="card-title-font mt-0 mb-0 fw-semibold">{{this.ProjectName}}</h5></a>
               <div class="duration mb-3">
-                <small class="text-muted">Durasi</small>
+                <small class="text-muted">Durasi {{this.duration}}</small>
               </div>
-              <p class="card-text fs-6 mb-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="img-icon">
-                <img src='public/assetts/icon/node-js.png' class="">
-                <img src='public/assetts/icon/typescript.png' class="">
-                <img src='public/assetts/icon/next-js.png' class="">
-                <img src='public/assetts/icon/react-js.png' class="">
+              <p class="card-text fs-6 mb-3">{{this.Description}}.</p>
+              <div class="img-icon" >
+               <img src={{this.NodeJS}} alt="">
+               <img src={{this.ReactJS}} alt="">
+               <img src={{this.TypeScript}} alt="">
+               <img src={{this.NextJS}} alt="">
               </div>
                 <div class="row row-cols-2 mt-3 ms-0 me-0">
-                <button class="btn bg-contactme text-white col p-0" type="button">EDIT</button>
-                <button class="btn bg-contactme text-white col p-0" type="button">DELETE</button>
+                <a class="btn bg-contactme text-white col p-0" type="button" href="/updateMyProject/{{@index}}">EDIT</a>
+                <a class="btn bg-contactme text-white col p-0" type="button" href="/delete-project/{{@index}}">DELETE</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+    {{/each}}
     </div>
 
 
